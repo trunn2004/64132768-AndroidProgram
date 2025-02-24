@@ -42,20 +42,23 @@
 
     <TextView
         android:id="@+id/cameraLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="81dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="17dp"
         android:text="s"
-        tools:layout_editor_absoluteX="87dp"
+        app:layout_constraintEnd_toStartOf="@+id/cameraLabel"
         tools:layout_editor_absoluteY="379dp" />
 
     <EditText
         android:id="@+id/cameraLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="364dp"
+        android:layout_marginEnd="48dp"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
-        tools:layout_editor_absoluteX="185dp"
-        tools:layout_editor_absoluteY="368dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
