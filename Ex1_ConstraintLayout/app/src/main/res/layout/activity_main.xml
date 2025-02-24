@@ -14,7 +14,7 @@
         android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Button" />
+        tools:text="button" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:layout_marginBottom="16dp"
-        android:text="Button"
+        android:text="button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/upload" />
 
@@ -45,7 +45,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="s"
-        tools:layout_editor_absoluteX="193dp"
-        tools:layout_editor_absoluteY="386dp" />
+        tools:layout_editor_absoluteX="87dp"
+        tools:layout_editor_absoluteY="379dp" />
+
+    <EditText
+        android:id="@+id/cameraLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:text="Name"
+        tools:layout_editor_absoluteX="185dp"
+        tools:layout_editor_absoluteY="368dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

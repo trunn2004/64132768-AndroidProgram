@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Ex1_ConstraintLayout</string>
+    <string name="camera" />
+    <string name="upload" />
+    <string name="placeholder" />
+    <string name="setting" />
+    <string name="discard" />
 </resources>
