@@ -11,6 +11,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:padding="5dp"
+        android:orientation="horizontal"
         android:layout_marginTop="15dp"
         android:layout_height="60dp">
         <TextView
@@ -29,6 +30,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:padding="5dp"
+        android:orientation="horizontal"
         android:layout_marginTop="15dp"
         android:layout_height="60dp">
         <TextView
@@ -43,5 +45,37 @@
             android:layout_height="wrap_content"
             android:hint="Nhập vào giá trị">
         </EditText>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_height="60dp">
+        <Button
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+">
+        </Button>
+        <Button
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-">
+        </Button>
+        <Button
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*">
+        </Button>
+        <Button
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/">
+        </Button>
     </LinearLayout>
 </LinearLayout>
