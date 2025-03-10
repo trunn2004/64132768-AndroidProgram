@@ -33,55 +33,26 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //xu ly cong
-                EditText editTextSo1 =(EditText)findViewById(R.id.edtSo1);
-                EditText editTextSo2 =(EditText)findViewById(R.id.edtSo2);
-                String so1 = editTextSo1.getText().toString();
-                String so2 = editTextSo1.getText().toString();
-                float so01 = Float.parseFloat(so1);
-                float so02 = Float.parseFloat(so1);
-                float tong = so01 + so02;
-                String chuoiKQ = String.valueOf(tong);
-                editTextKQ.setText(chuoiKQ);
+
             }
         };
         nutCong.setOnClickListener(boLangNgheCong);
         nutTru.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String so1 = editTextSo1.getText().toString();
-                String so2 = editTextSo1.getText().toString();
-                float so01 = Float.parseFloat(so1);
-                float so02 = Float.parseFloat(so1);
-                float tong = so01 - so02;
-                String chuoiKQ = String.valueOf(tong);
-                editTextKQ.setText(chuoiKQ);
 
             }
         });
         nutNhan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String so1 = editTextSo1.getText().toString();
-                String so2 = editTextSo1.getText().toString();
-                float so01 = Float.parseFloat(so1);
-                float so02 = Float.parseFloat(so1);
-                float tong = so01 * so02;
-                String chuoiKQ = String.valueOf(tong);
-                editTextKQ.setText(chuoiKQ);
+
             }
         });
         nutChia.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String so1 = editTextSo1.getText().toString();
-                String so2 = editTextSo1.getText().toString();
-                float so01 = Float.parseFloat(so1);
-                float so02 = Float.parseFloat(so1);
-                if (so02 != 0){
-                    float tong = so01 / so02;
-                    String chuoiKQ = String.valueOf(tong);
-                    editTextKQ.setText(chuoiKQ);}
-                else System.out.println("Không thể tính toán");
+
             }
         });
     }
@@ -95,45 +66,6 @@ public class MainActivity extends AppCompatActivity {
         nutCong = (Button) findViewById(R.id.btnNhan);
         nutCong = (Button) findViewById(R.id.btnChia);
     }
-    public void XuLyCong(View v){
-        EditText editTextSo1 =(EditText)findViewById(R.id.edtSo1);
-        EditText editTextSo2 =(EditText)findViewById(R.id.edtSo2);
-        String so1 = editTextSo1.getText().toString();
-        String so2 = editTextSo1.getText().toString();
-        float so01 = Float.parseFloat(so1);
-        float so02 = Float.parseFloat(so1);
-        float tong = so01 + so02;
-        String chuoiKQ = String.valueOf(tong);
-        editTextKQ.setText(chuoiKQ);
-    }
-    public void XuLyTru(View v){
-        String so1 = editTextSo1.getText().toString();
-        String so2 = editTextSo1.getText().toString();
-        float so01 = Float.parseFloat(so1);
-        float so02 = Float.parseFloat(so1);
-        float tong = so01 - so02;
-        String chuoiKQ = String.valueOf(tong);
-        editTextKQ.setText(chuoiKQ);
-    }
-    public void XuLyNhan(View v){
-        String so1 = editTextSo1.getText().toString();
-        String so2 = editTextSo1.getText().toString();
-        float so01 = Float.parseFloat(so1);
-        float so02 = Float.parseFloat(so1);
-        float tong = so01 * so02;
-        String chuoiKQ = String.valueOf(tong);
-        editTextKQ.setText(chuoiKQ);
-    }
-    public void XuLyChia(View v){
-        String so1 = editTextSo1.getText().toString();
-        String so2 = editTextSo1.getText().toString();
-        float so01 = Float.parseFloat(so1);
-        float so02 = Float.parseFloat(so1);
-        if (so02 != 0){
-            float tong = so01 / so02;
-            String chuoiKQ = String.valueOf(tong);
-            editTextKQ.setText(chuoiKQ);}
-        else System.out.println("Không thể tính toán");
-    }
+   
 
 }
