@@ -21,12 +21,12 @@
             android:textSize="18dp"
             android:textColor="#B213BA">
         </TextView>
+
         <EditText
             android:id="@+id/edtSo1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nhập vào giá trị">
-        </EditText>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Nhập vào giá trị"></EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -41,12 +41,12 @@
             android:textSize="18dp"
             android:textColor="#B213BA">
         </TextView>
+
         <EditText
             android:id="@+id/edtSo2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Nhập vào giá trị">
-        </EditText>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:hint="Nhập vào giá trị"></EditText>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,38 +55,34 @@
         android:layout_marginTop="15dp"
         android:gravity="center"
         android:layout_height="60dp">
+
         <Button
             android:id="@+id/btnCong"
-            android:layout_margin="2dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+"
-            >
-        </Button>
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:text="+"></Button>
+
         <Button
             android:id="@+id/btnTru"
-            android:layout_margin="2dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="-"
-            >
-        </Button>
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:text="-"></Button>
+
         <Button
             android:id="@+id/btnNhan"
-            android:layout_margin="2dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="*"
-            >
-        </Button>
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:text="*"></Button>
+
         <Button
             android:id="@+id/btnChia"
-            android:layout_margin="2dp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="/"
-            >
-        </Button>
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:text="/"></Button>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -101,12 +97,12 @@
             android:textSize="18dp"
             android:textColor="#B213BA">
         </TextView>
+
         <EditText
             android:id="@+id/edtKQ"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Hiện kết quả"
-            android:enabled="false">
-        </EditText>
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:enabled="false"
+            android:hint="Hiện kết quả"></EditText>
     </LinearLayout>
 </LinearLayout>
