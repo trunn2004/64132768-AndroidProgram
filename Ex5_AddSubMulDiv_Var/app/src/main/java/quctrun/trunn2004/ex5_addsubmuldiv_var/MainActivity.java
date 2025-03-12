@@ -1,6 +1,7 @@
 package quctrun.trunn2004.ex5_addsubmuldiv_var;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -29,14 +30,89 @@ public class MainActivity extends AppCompatActivity {
 
         });
         TimView();
+        //gan bo lang nghe
+        btnCong.setOnClickListener(boLangNghe_XuLyCong);
+        btnCong.setOnClickListener(boLangNghe_XuLyTru);
+        btnCong.setOnClickListener(boLangNghe_XuLyNhan);
+        btnCong.setOnClickListener(boLangNghe_XuLyChia);
     }
+
+    View.OnClickListener boLangNghe_XuLyCong = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //cdoe xu ly cong
+            //1.lay so 1
+            String strSo1= edtSoA.getText().toString();
+            String strSo2= edtSoB.getText().toString();
+            //2. chuyen thanh so de tinh tong
+            double soA = Double.parseDouble(strSo1);
+            double soB = Double.parseDouble(strSo2);
+            //tinh toan
+            double tong = soA+soB;
+            //xuat
+            String strKQ = String.valueOf(tong);
+            tvKetQua.setText(strKQ);
+        }
+    };
+    View.OnClickListener boLangNghe_XuLyTru = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //cdoe xu ly tru
+            //1.lay so 1
+            String strSo1= edtSoA.getText().toString();
+            String strSo2= edtSoB.getText().toString();
+            //2. chuyen thanh so de tinh tong
+            double soA = Double.parseDouble(strSo1);
+            double soB = Double.parseDouble(strSo2);
+            //tinh toan
+            double tong = soA-soB;
+            //xuat
+            String strKQ = String.valueOf(tong);
+            tvKetQua.setText(strKQ);
+        }
+    };
+    View.OnClickListener boLangNghe_XuLyNhan = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //cdoe xu ly Nhan
+            //1.lay so 1
+            String strSo1= edtSoA.getText().toString();
+            String strSo2= edtSoB.getText().toString();
+            //2. chuyen thanh so de tinh tong
+            double soA = Double.parseDouble(strSo1);
+            double soB = Double.parseDouble(strSo2);
+            //tinh toan
+            double tong = soA*soB;
+            //xuat
+            String strKQ = String.valueOf(tong);
+            tvKetQua.setText(strKQ);
+        }
+    };
+    View.OnClickListener boLangNghe_XuLyChia = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            //cdoe xu ly cong
+            //1.lay so 1
+            String strSo1= edtSoA.getText().toString();
+            String strSo2= edtSoB.getText().toString();
+            //2. chuyen thanh so de tinh tong
+            double soA = Double.parseDouble(strSo1);
+            double soB = Double.parseDouble(strSo2);
+            //tinh toan
+           if (soB != 0){
+                double tong = soA / soB;
+                String chuoiKQ = String.valueOf(tong);
+                tvKetQua.setText(chuoiKQ);}
+            else System.out.println("Không thể tính toán");
+        }
+    };
     void TimView(){
-        edtSoA = (EditText) findViewById(R.id.editTextText);
-        edtSoB = (EditText) findViewById(R.id.editTextText2);
-        btnCong =(Button) findViewById(R.id.button);
-        btnTru =(Button) findViewById(R.id.button2);
-        btnNhan =(Button) findViewById(R.id.button3);
-        btnChia =(Button) findViewById(R.id.button4);
+        edtSoA = (EditText) findViewById(R.id.edtsoA);
+        edtSoB = (EditText) findViewById(R.id.edtSoB);
+        btnCong =(Button) findViewById(R.id.btnCong);
+        btnTru =(Button) findViewById(R.id.btnTru);
+        btnNhan =(Button) findViewById(R.id.btnNhan);
+        btnChia =(Button) findViewById(R.id.btnChia);
     }
 
 

@@ -32,44 +32,44 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCong"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
         android:text="+"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnTru"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="-"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintStart_toEndOf="@+id/btnCong"
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnNhan"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:text="*"
-        app:layout_constraintEnd_toStartOf="@+id/button4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintEnd_toStartOf="@+id/btnChia"
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnChia"
         android:layout_width="60dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:text="/"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB" />
 
     <TextView
         android:id="@+id/textView"
@@ -92,36 +92,33 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edtsoA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Nhập số thứ nhất"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/edtSoB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
         android:layout_marginTop="3dp"
         android:ems="10"
         android:inputType="text"
-        android:text="Nhập số thứ hai"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/edtsoA" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/tvKetQua"
         android:layout_width="198dp"
         android:layout_height="62dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="104dp"
-        android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSoB" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
