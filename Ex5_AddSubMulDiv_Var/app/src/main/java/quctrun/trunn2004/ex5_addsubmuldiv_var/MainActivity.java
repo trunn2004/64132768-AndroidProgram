@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         TimView();
         //gan bo lang nghe
         btnCong.setOnClickListener(boLangNghe_XuLyCong);
-        btnCong.setOnClickListener(boLangNghe_XuLyTru);
-        btnCong.setOnClickListener(boLangNghe_XuLyNhan);
-        //btnCong.setOnClickListener(boLangNghe_XuLyChia);
+        btnTru.setOnClickListener(boLangNghe_XuLyTru);
+        btnNhan.setOnClickListener(boLangNghe_XuLyNhan);
+        //btnChia.setOnClickListener(boLangNghe_XuLyChia);
         //bo lang nghe an danh
         btnChia.setOnClickListener(new View.OnClickListener() {
             @Override
