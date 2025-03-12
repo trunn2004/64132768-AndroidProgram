@@ -107,24 +107,7 @@ public class MainActivity extends AppCompatActivity {
             tvKetQua.setText(strKQ);
         }
     };
-    View.OnClickListener boLangNghe_XuLyChia = new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            //cdoe xu ly cong
-            //1.lay so 1
-            String strSo1= edtSoA.getText().toString();
-            String strSo2= edtSoB.getText().toString();
-            //2. chuyen thanh so de tinh tong
-            double soA = Double.parseDouble(strSo1);
-            double soB = Double.parseDouble(strSo2);
-            //tinh toan
-           if (soB != 0){
-                double tong = soA / soB;
-                String chuoiKQ = String.valueOf(tong);
-                tvKetQua.setText(chuoiKQ);}
-            else System.out.println("Không thể tính toán");
-        }
-    };
+
     void TimView(){
         edtSoA = (EditText) findViewById(R.id.edtsoA);
         edtSoB = (EditText) findViewById(R.id.edtSoB);
