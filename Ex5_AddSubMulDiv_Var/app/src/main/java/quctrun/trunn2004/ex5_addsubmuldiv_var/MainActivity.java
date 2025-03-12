@@ -115,6 +115,7 @@ public class MainActivity extends AppCompatActivity {
         btnTru =(Button) findViewById(R.id.btnTru);
         btnNhan =(Button) findViewById(R.id.btnNhan);
         btnChia =(Button) findViewById(R.id.btnChia);
+        tvKetQua = (TextView) findViewById(R.id.tvKetQua);
     }
 
 

@@ -85,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
     }
     void XULY_CHIA(){
         String so1 = editTextSo1.getText().toString();
-        String so2 = editTextSo1.getText().toString();
+        String so2 = editTextSo2.getText().toString();
         float so01 = Float.parseFloat(so1);
-        float so02 = Float.parseFloat(so1);
+        float so02 = Float.parseFloat(so2);
         if (so02 != 0){
             float tong = so01 / so02;
             String chuoiKQ = String.valueOf(tong);
@@ -100,8 +100,8 @@ public class MainActivity extends AppCompatActivity {
         editTextKQ = (EditText) findViewById(R.id.edtKQ);
         nutCong = (Button) findViewById(R.id.btnCong);
         nutTru = (Button) findViewById(R.id.btnTru);
-        nutCong = (Button) findViewById(R.id.btnNhan);
-        nutCong = (Button) findViewById(R.id.btnChia);
+        nutNhan = (Button) findViewById(R.id.btnNhan);
+        nutChia= (Button) findViewById(R.id.btnChia);
     }
 
 
