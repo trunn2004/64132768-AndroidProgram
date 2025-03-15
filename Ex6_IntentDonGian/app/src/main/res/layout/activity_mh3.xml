@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Đây Là Màn Hình 2"
+        android:text="Đây Là Màn Hình 3"
         android:textSize="30dp"
         android:textColor="#9806AD"
         android:padding="20dp">
@@ -22,6 +22,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/sym_def_app_icon"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars[7]" />
 
 </LinearLayout>
