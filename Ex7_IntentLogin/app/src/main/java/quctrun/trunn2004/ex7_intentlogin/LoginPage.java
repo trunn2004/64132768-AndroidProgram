@@ -38,7 +38,7 @@ public class LoginPage extends AppCompatActivity {
                 String tenDangNhap = edtTenDN.getText().toString();
                 String matKhau = edtMatKhau.getText().toString();
 
-                if (tenDangNhap.equals("nguyenquuoctrung") && matKhau.equals("123")){
+                if (tenDangNhap.equals("nguyenquoctrung") && matKhau.equals("123")){
                     Intent iQuiz = new Intent(LoginPage.this, HomeActivity.class);
                     iQuiz.putExtra("ten_dang_nhap",tenDangNhap);
                     iQuiz.putExtra("mat_khau",matKhau);

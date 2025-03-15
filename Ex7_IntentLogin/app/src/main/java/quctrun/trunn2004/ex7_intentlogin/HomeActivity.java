@@ -26,6 +26,6 @@ public class HomeActivity extends AppCompatActivity {
         String tenDN_NhanDuoc = intentTuLogin.getStringExtra("ten_dang_nhap");
         TextView tvTenDN = (TextView) findViewById(R.id.tvUsername);
         tvTenDN.setText(tenDN_NhanDuoc);
-        
+
     }
 }
