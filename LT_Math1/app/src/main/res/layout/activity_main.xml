@@ -74,7 +74,6 @@
                     android:id="@+id/tv1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:backgroundTint="@color/green_light"
                     android:gravity="center"
                     android:text="English"
                     android:textColor="@color/green_dark"
