@@ -72,7 +72,7 @@ public class landScapeAddapter extends RecyclerView.Adapter<landScapeAddapter.It
             String ten = phantuDuocchon.getLandCaption();
             String tenFile = phantuDuocchon.getLandImageFileName();
             //Toast ten
-            String chuoithongbao = "Ban vua clikc" + ten;
+            String chuoithongbao = "Ban vua click" + ten;
             Toast.makeText(v.getContext(), chuoithongbao, Toast.LENGTH_SHORT).show();
         }
     }
