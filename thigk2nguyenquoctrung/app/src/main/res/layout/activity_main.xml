@@ -8,14 +8,25 @@
     android:orientation="vertical"
     android:background="@color/background"
     tools:context=".MainActivity">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        >
-    </TextView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="440dp"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#2196F3">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/LogoNTU"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:gravity="center">
         <LinearLayout
             android:layout_width="220dp"
@@ -27,7 +38,7 @@
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textAlignment="center"
-                android:textColor="@color/text_TD"
+                android:background="@drawable/LogoNTU"
                 android:textSize="30dp"
                 android:layout_margin="25dp">
             </TextView>
@@ -45,7 +56,6 @@
                     android:layout_margin="10dp"
                     app:cardCornerRadius="20dp"
                     app:cardElevation="4dp">
-
                     <TextView
                         android:id="@+id/tv1"
                         android:layout_width="120dp"
@@ -74,6 +84,9 @@
                         android:layout_height="50dp"
                         android:gravity="center"
                         android:text="Cau 2"
+                        android:elevation="25dp"
+                        android:textColor="@color/accent"
+                        android:background="@color/button"
                         android:textSize="22sp"
                         android:textStyle="bold">
                     </TextView>
@@ -92,9 +105,11 @@
                         android:layout_height="50dp"
                         android:gravity="center"
                         android:text="Cau 3"
+                        android:elevation="25dp"
+                        android:textColor="@color/accent"
+                        android:background="@color/button"
                         android:textSize="22sp"
-                        android:textStyle="bold">
-                    </TextView>
+                        android:textStyle="bold"></TextView>
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
@@ -110,7 +125,10 @@
                         android:layout_width="120dp"
                         android:layout_height="50dp"
                         android:gravity="center"
-                        android:text="Cau 4"
+                        android:text="About Me"
+                        android:elevation="25dp"
+                        android:textColor="@color/accent"
+                        android:background="@color/button"
                         android:textSize="22sp"
                         android:textStyle="bold">
                     </TextView>
