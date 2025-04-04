@@ -28,7 +28,7 @@ public class Activity3 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_3);
-        
+
         lv = findViewById(R.id.listView);
 
         ds = new ArrayList<>();

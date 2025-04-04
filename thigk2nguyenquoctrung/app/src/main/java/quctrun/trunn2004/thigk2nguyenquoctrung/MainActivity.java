@@ -41,15 +41,22 @@ public class MainActivity extends AppCompatActivity {
         tv3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent IntentMH3 = new Intent(MainActivity.this, Activity4.class);
+                Intent IntentMH3 = new Intent(MainActivity.this, Activity5.class);
                 startActivity(IntentMH3);
             }
         });
         tv4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent IntentMH4 = new Intent(MainActivity.this, Activity5.class);
+                Intent IntentMH4 = new Intent(MainActivity.this, Activity4.class);
                 startActivity(IntentMH4);
+            }
+        });
+        tv5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent IntentMH5 = new Intent(MainActivity.this, LT.class);
+                startActivity(IntentMH5);
             }
         });
     }
