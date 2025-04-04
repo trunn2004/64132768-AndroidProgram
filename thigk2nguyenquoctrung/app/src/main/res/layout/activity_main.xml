@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    </TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/text_TD"
+                android:textSize="30dp"
+                android:layout_margin="25dp">
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Câu 1"
+                        android:elevation="25dp"
+                        android:textColor="@color/accent"
+                        android:background="@color/button"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Cau 2"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Cau 3"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="4dp">
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="120dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:text="Cau 4"
+                        android:textSize="22sp"
+                        android:textStyle="bold">
+                    </TextView>
+                </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
