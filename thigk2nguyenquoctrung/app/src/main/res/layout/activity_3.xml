@@ -13,7 +13,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="20dp"
-            android:background="@drawable/LogoNTU"
+            android:background="@drawable/logontu"
             android:textAlignment="center"
             android:textSize="50sp"
             android:textStyle="bold" />
