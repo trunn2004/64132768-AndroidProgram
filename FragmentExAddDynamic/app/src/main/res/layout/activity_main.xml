@@ -5,4 +5,28 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"/>
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frameContent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#AF4D4D"
+        app:layout_constraintBottom_toTopOf="@+id/frameFooter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frameFooter"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:background="#7FAF3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
