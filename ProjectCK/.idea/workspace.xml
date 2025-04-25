@@ -17,27 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c2d00614-f9d7-4b16-90b1-d83eab556da8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/java/quctrun/trunn2004/bottomnavigation/HomeFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/java/quctrun/trunn2004/bottomnavigation/ProfileFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/java/quctrun/trunn2004/bottomnavigation/SearchFragment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/drawable/home.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/drawable/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/drawable/profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/drawable/search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/menu/bottom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../FragmentEx_replace/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../FragmentEx_replace/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BottomNavigation/app/src/main/java/quctrun/trunn2004/bottomnavigation/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/java/quctrun/trunn2004/bottomnavigation/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BottomNavigation/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
