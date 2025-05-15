@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+    <layouts>
+      <layout url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+        <config>
+          <theme>@style/Theme.Test</theme>
+        </config>
+      </layout>
+    </layouts>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ba7ff143-d8bc-4d4e-a52a-dcc1bc863952" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/AndroidProjectSystem.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/deploymentTargetSelector.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/google-services.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/release/app-release.apk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/release/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/androidTest/java/com/example/assignment/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/AdapterThuChi/KhoanChiAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/AdapterThuChi/KhoanChi_ViewPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/AdapterThuChi/KhoanThuAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/AdapterThuChi/KhoanThu_ViewPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/AdapterThuChi/LoaiChiAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/AdapterThuChi/LoaiThuAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ArrayListThuChi/GiaoDich.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ArrayListThuChi/TaikhoanMatKhau.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ArrayListThuChi/ThuChi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/BlankFragment1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/BlankFragment2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/BlankFragment3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/BlankFragment4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/Capnhatthongtinnguoidung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ChucNangThemSuaXoaThuChiTaiKhoan/ThemSuaTaiKhoan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ChucNangThemSuaXoaThuChiTaiKhoan/chucnangloaithuchi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ChucNangThemSuaXoaThuChiTaiKhoan/chucnangthuchi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/DangKiActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/Dangnhap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/DatabaseSQLite/Database.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/Datlaimatkhaubanggmail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/FragmentThuChi/KhoanChi_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/FragmentThuChi/KhoanThu_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/FragmentThuChi/Tab_KhoanChi_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/FragmentThuChi/Tab_KhoanThu_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/FragmentThuChi/Tab_LoaiChi_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/FragmentThuChi/Tab_LoaiThu_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/FragmentThuChi/ThongKe_Fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/IntroLoadingActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/Mes/MyFirebaseMessagingService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/NotificationApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/PhanHoiNguoiDung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/Users.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ViewPagerAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/ViewPagerGioiThieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/chichu/FileGhiChu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/chichu/GhiChuEditer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/doimk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/gioithieu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/java/com/example/assignment/gioithieu_fragment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/anim/fade_scale_animation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/anim/fade_transition_animation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/anim/popdown.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/anim/popup.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-anydpi-v24/ic_stat_name.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/anhthuchi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/fhfhfhfh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/ic_baseline_account_balance_wallet_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/ic_baseline_create_new_folder_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/ic_baseline_feedback_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/ic_stat_name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/list.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/listnote.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/loaithuchi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/pasttt.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/preview.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-hdpi/vvvvvvvvv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-mdpi/ic_stat_name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/back_to_home_button.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/baseline_dashboard_black_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/baseline_event_black_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/baseline_exit_to_app_black_24dp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/btn.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/button_bg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/cash.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/email.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_attach_money_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_help.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_info.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_monetization_on_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_person_add_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_phone_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_search_gray_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_settings_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/ic_thong_ke_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/money.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-v24/search_input_style.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-xhdpi/ic_stat_name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable-xxhdpi/ic_stat_name.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/animation.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/background_dialog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/background_edttext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/background_edttextdo.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/background_edttextdox.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/bg_ui.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/bg_uiv.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/button_bgq.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/button_bgv.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/chart_line.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/coins.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/computer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/default_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/error_img.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/facebook.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/gmail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/heo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/heodathyhy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/huyhuy.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_assignment_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_bar_chart_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_cloud_download_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_contact_phone_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_email_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_error_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_filter_alt_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_help_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_insert_chart_outlined_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_keyboard_arrow_down_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_baseline_mic_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_cash.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_date.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_delete.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_gioithieu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_grid.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_key.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_money.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_money1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_mota.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/ic_vpn.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/icon_datemotagiaodich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/icon_loaimotagiaodich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/icon_moneymotagaodich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/icon_motagiaodich.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/icondaidiendialog.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/iconnho.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/iconto.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/image_edit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/khien.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/khienbaove.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/khoanchi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/loadingcustom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/loaichi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/login_chiakhoa.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/logofpoly.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/moneta_forever.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/person_icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/phone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/radius_bottom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/radius_edittext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/recycle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/securityapk.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/shield_motion_icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/tab_backdround.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/thitruong.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/tui.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vien.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vien0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vien1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vien2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vien3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vien4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vientrondep.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vientrondep2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vientrondepv.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vienvang.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/vienvv.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/drawable/xulogin.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/activity_capnhatthongtinnguoidung.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/activity_datlaimatkhaubanggmail.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/activity_doimk.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/activity_file_ghi_chu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/activity_ghi_chu_editer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/activity_intro_loading.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_gioithieu_fragment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_intro_four.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_intro_one.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_intro_three.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_intro_two.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_layout_khoanchi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_layout_khoanthu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_listview_khoanchi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_listview_khoanthu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_listview_loaichi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_listview_loaithu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_phan_hoi_nguoi_dung.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/fragment_thong_ke_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/gridview_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/gridview_item_loaitc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/layout_dangky.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/layout_dangnhap.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/layout_sua_xoa_xemchitiet_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/layout_thongtin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/listview_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/listview_item_loaitc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/loctc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/popup_xoa_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/popupchuacodullieu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/spiner_loaithuchi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/spinnerlocloaithuchi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/them_khoan_thuchi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/them_loai_thuchi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/thong_tin_gd.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/layout/timkiem_thuchi.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/menu/bottom_navigation.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/menu/drawer_menu.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/menu/ghichunote.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/menu/toolbar_search.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/mipmap-hdpi/ic_launcher_mimap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/mipmap-mdpi/ic_launcher_mimap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/mipmap-xhdpi/ic_launcher_mimap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/mipmap-xxhdpi/ic_launcher_mimap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/mipmap-xxxhdpi/ic_launcher_mimap.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/values/dimens.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/main/res/values/styles.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/app/src/test/java/com/example/assignment/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/app/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BottomNavigation/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BottomNavigation/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LT_Math/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/LT_Math/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/test/app/.gitignore" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[DeviceId(pluginId=LocalEmulator, isTemplate=false, identifier=path=C:\Users\Admin\.android\avd\Medium_Phone.avd)]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2wEaPyBwkff6iuFi98GPpkZInBz" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Java/64132768-AndroidProgram/BottomNavigation"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="test.app" />
+      <option name="ANDROID_RUN_CONFIGURATION_SCHEMA_VERSION" value="1" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="ALLOW_ASSUME_VERIFIED" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="RESTORE_ENABLED" value="false" />
+      <option name="RESTORE_FILE" value="" />
+      <option name="RESTORE_FRESH_INSTALL_ONLY" value="false" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ba7ff143-d8bc-4d4e-a52a-dcc1bc863952" name="Changes" comment="" />
+      <created>1745609166744</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745609166744</updated>
+    </task>
+    <servers />
+  </component>
+</project>
