@@ -1,64 +1,61 @@
 package quctrun.trunn2004.cuoiky;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 
-import quctrun.trunn2004.cuoiky.database.DatabaseHelper;
-import com.google.android.material.textfield.TextInputLayout;
-
+import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
 
-    EditText edtEmail, edtPassword;
-    Button btnLogin, btnToRegister;
-    DatabaseHelper db;
+    private EditText edtEmail, edtPassword;
+    private Button btnLogin;
+    private TextView tvForgotPassword;
+    private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        db = new DatabaseHelper(this);
-        edtEmail = findViewById(R.id.edtEmail);
-        edtPassword = findViewById(R.id.edtPassword);
+        edtEmail = findViewById(R.id.emailLogin);
+        edtPassword = findViewById(R.id.passwordLogin);
         btnLogin = findViewById(R.id.btnLogin);
-        btnToRegister = findViewById(R.id.btnToRegister);
+        tvForgotPassword = findViewById(R.id.tvForgotPassword);
+        mAuth = FirebaseAuth.getInstance();
 
         btnLogin.setOnClickListener(v -> {
             String email = edtEmail.getText().toString().trim();
             String password = edtPassword.getText().toString().trim();
 
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
+                Toast.makeText(this, "Điền đầy đủ email và mật khẩu", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            Cursor cursor = db.loginUser(email, password);
-            if (cursor != null && cursor.moveToFirst()) {
-                int userId = cursor.getInt(cursor.getColumnIndexOrThrow("id"));
-                getSharedPreferences("user", MODE_PRIVATE)
-                        .edit()
-                        .putInt("user_id", userId)
-                        .apply();
-
-                String pin = db.getPin(userId);
-                if (pin != null) {
-                    startActivity(new Intent(LoginActivity.this, EnterPinActivity.class));
-                } else {
-                    startActivity(new Intent(LoginActivity.this, CreatePinActivity.class));
-                }
-                finish();
-            } else {
-                Toast.makeText(this, "Sai email hoặc mật khẩu", Toast.LENGTH_SHORT).show();
-            }
+            mAuth.signInWithEmailAndPassword(email, password)
+                    .addOnCompleteListener(task -> {
+                        if (task.isSuccessful()) {
+                            Toast.makeText(this, "Đăng nhập thành công", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(this, MainActivity.class));
+                            finish();
+                        } else {
+                            Toast.makeText(this, "Sai tài khoản hoặc mật khẩu", Toast.LENGTH_SHORT).show();
+                        }
+                    });
         });
 
-        btnToRegister.setOnClickListener(v -> {
-            startActivity(new Intent(this, RegisterActivity.class));
+        tvForgotPassword.setOnClickListener(v -> {
+            startActivity(new Intent(this, ResetPassWordActivity.class));
         });
     }
 }

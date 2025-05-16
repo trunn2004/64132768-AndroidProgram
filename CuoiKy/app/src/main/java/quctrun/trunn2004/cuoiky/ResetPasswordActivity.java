@@ -1,7 +1,5 @@
 package quctrun.trunn2004.cuoiky;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
@@ -16,36 +14,33 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.google.firebase.auth.FirebaseAuth;
 
-public class RegisterActivity extends AppCompatActivity {
-
-    private EditText edtEmail, edtPassword;
-    private Button btnRegister;
+public class ResetPasswordActivity extends AppCompatActivity {
+    
+    private EditText edtEmail;
+    private Button btnResetPassword;
     private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_reset_password);
 
-        edtEmail = findViewById(R.id.emailRegister);
-        edtPassword = findViewById(R.id.passwordRegister);
-        btnRegister = findViewById(R.id.btnRegister);
+        edtEmail = findViewById(R.id.emailReset);
+        btnResetPassword = findViewById(R.id.btnReset);
         mAuth = FirebaseAuth.getInstance();
 
-        btnRegister.setOnClickListener(v -> {
+        btnResetPassword.setOnClickListener(v -> {
             String email = edtEmail.getText().toString().trim();
-            String password = edtPassword.getText().toString().trim();
-
-            if (TextUtils.isEmpty(email) || TextUtils.isEmpty(password)) {
-                Toast.makeText(this, "Vui lòng nhập đầy đủ thông tin", Toast.LENGTH_SHORT).show();
+            if (TextUtils.isEmpty(email)) {
+                Toast.makeText(this, "Nhập email để đặt lại mật khẩu", Toast.LENGTH_SHORT).show();
                 return;
             }
 
-            mAuth.createUserWithEmailAndPassword(email, password)
+            mAuth.sendPasswordResetEmail(email)
                     .addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
-                            Toast.makeText(this, "Đăng ký thành công", Toast.LENGTH_SHORT).show();
-                            finish(); // Quay về login
+                            Toast.makeText(this, "Đã gửi email khôi phục!", Toast.LENGTH_SHORT).show();
+                            finish();
                         } else {
                             Toast.makeText(this, "Lỗi: " + task.getException().getMessage(), Toast.LENGTH_LONG).show();
                         }
