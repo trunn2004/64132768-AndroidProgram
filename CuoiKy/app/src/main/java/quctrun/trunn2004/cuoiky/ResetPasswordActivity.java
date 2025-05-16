@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class ResetPasswordActivity extends AppCompatActivity {
-    
+
     private EditText edtEmail;
     private Button btnResetPassword;
     private FirebaseAuth mAuth;

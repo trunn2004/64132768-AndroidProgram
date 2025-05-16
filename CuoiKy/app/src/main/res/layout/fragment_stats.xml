@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_stats"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".StatsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Biểu đồ thống kê chi tiêu"
+        android:textAppearance="?attr/textAppearanceHeadlineSmall"
+        android:paddingBottom="8dp" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/totalIncome"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Tổng thu: 0đ"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="@android:color/holo_green_dark" />
+
+        <TextView
+            android:id="@+id/totalExpense"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Tổng chi: 0đ"
+            android:textAppearance="?attr/textAppearanceBodyLarge"
+            android:textColor="@android:color/holo_red_dark"
+            android:gravity="end" />
+    </LinearLayout>
+</LinearLayout>
