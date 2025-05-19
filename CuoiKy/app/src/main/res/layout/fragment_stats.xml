@@ -1,51 +1,104 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/fragment_stats"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".StatsFragment">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Biểu đồ thống kê chi tiêu"
-        android:textAppearance="?attr/textAppearanceHeadlineSmall"
-        android:paddingBottom="8dp" />
-
-    <com.github.mikephil.charting.charts.BarChart
-        android:id="@+id/barChart"
-        android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:layout_margin="16dp" />
-
-
+    android:layout_height="match_parent">
 
     <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2"
-        android:gravity="center">
+        android:layout_height="wrap_content">
 
+        <!-- Tiêu đề -->
         <TextView
-            android:id="@+id/totalIncome"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:text="Tổng thu: 0đ"
-            android:textAppearance="?attr/textAppearanceBodyLarge"
-            android:textColor="@android:color/holo_green_dark" />
+            android:text="LỊCH SỬ THỐNG KÊ"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
 
-        <TextView
-            android:id="@+id/totalExpense"
-            android:layout_width="0dp"
-            android:layout_weight="1"
+        <!-- Ngày bắt đầu - kết thúc -->
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tổng chi: 0đ"
-            android:textAppearance="?attr/textAppearanceBodyLarge"
-            android:textColor="@android:color/holo_red_dark"
-            android:gravity="end" />
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/btnStartDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày bắt đầu" />
+
+            <TextView
+                android:text=" đến "
+                android:layout_marginHorizontal="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnEndDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ngày kết thúc" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSearch"
+            android:text="TÌM KIẾM"
+            android:layout_marginTop="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#E96D6D" />
+
+        <!-- BẢNG DỮ LIỆU -->
+        <TextView
+            android:text="BẢNG DỮ LIỆU"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_marginTop="8dp">
+
+            <TableRow>
+                <TextView android:text="Tổng thu nhập" />
+                <TextView android:id="@+id/txtTotalIncome" android:text="0 VND" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Tổng chi tiêu" />
+                <TextView android:id="@+id/txtTotalExpense" android:text="0 VND" />
+            </TableRow>
+
+            <TableRow>
+                <TextView android:text="Còn lại" />
+                <TextView android:id="@+id/txtRemaining" android:text="0 VND" />
+            </TableRow>
+        </TableLayout>
+
+        <!-- BIỂU ĐỒ -->
+        <TextView
+            android:text="BIỂU ĐỒ THU CHI"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="8dp" />
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

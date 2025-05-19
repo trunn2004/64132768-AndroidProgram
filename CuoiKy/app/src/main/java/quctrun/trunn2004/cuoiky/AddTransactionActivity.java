@@ -28,7 +28,6 @@ public class AddTransactionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add_transaction);
 
-        // Ánh xạ
         spinnerType = findViewById(R.id.spinner_type);
         editAmount = findViewById(R.id.edit_amount);
         editCategory = findViewById(R.id.edit_category);
@@ -37,20 +36,16 @@ public class AddTransactionActivity extends AppCompatActivity {
         btnPickDate = findViewById(R.id.btn_pick_date);
         btnSave = findViewById(R.id.btn_save);
 
-        // Firebase
         db = FirebaseFirestore.getInstance();
         auth = FirebaseAuth.getInstance();
 
-        // Spinner
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.transaction_types, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerType.setAdapter(adapter);
 
-        // Chọn ngày
         btnPickDate.setOnClickListener(v -> showDatePicker());
 
-        // Lưu dữ liệu
         btnSave.setOnClickListener(v -> saveTransaction());
     }
 
@@ -96,7 +91,7 @@ public class AddTransactionActivity extends AppCompatActivity {
                 .add(transaction)
                 .addOnSuccessListener(documentReference -> {
                     Toast.makeText(this, "Đã lưu thành công", Toast.LENGTH_SHORT).show();
-                    finish(); // đóng activity
+                    finish();
                 })
                 .addOnFailureListener(e -> {
                     Toast.makeText(this, "Lỗi: " + e.getMessage(), Toast.LENGTH_SHORT).show();
