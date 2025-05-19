@@ -38,7 +38,6 @@ public class MainActivity extends AppCompatActivity {
             return true;
         });
 
-        // Mặc định: Trang chủ
         bottomNav.setSelectedItemId(R.id.nav_home);
     }
 }
