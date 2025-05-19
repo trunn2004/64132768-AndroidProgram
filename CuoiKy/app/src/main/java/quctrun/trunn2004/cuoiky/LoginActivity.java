@@ -19,7 +19,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText edtEmail, edtPassword;
     private Button btnLogin;
-    private TextView tvForgotPassword;
+    private TextView tvForgotPassword, tvRegister;
     private FirebaseAuth mAuth;
 
     @Override
@@ -31,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
         edtPassword = findViewById(R.id.passwordLogin);
         btnLogin = findViewById(R.id.btnLogin);
         tvForgotPassword = findViewById(R.id.tvForgotPassword);
+        tvRegister =findViewById(R.id.tvRegister);
         mAuth = FirebaseAuth.getInstance();
 
         btnLogin.setOnClickListener(v -> {
@@ -52,6 +53,10 @@ public class LoginActivity extends AppCompatActivity {
                             Toast.makeText(this, "Sai tài khoản hoặc mật khẩu", Toast.LENGTH_SHORT).show();
                         }
                     });
+        });
+
+        tvRegister.setOnClickListener(v -> {
+            startActivity(new Intent(this, RegisterActivity.class));
         });
 
         tvForgotPassword.setOnClickListener(v -> {
