@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="loc_ngay">
+    <item>Tất cả</item>
+    <item>Hôm nay</item>
+    <item>Tuần này</item>
+    <item>Tháng này</item>
+</string-array>
+</resources>
