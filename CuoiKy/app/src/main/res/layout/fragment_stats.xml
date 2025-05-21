@@ -71,7 +71,8 @@
 
             <TableRow>
                 <TextView android:text="Tổng thu nhập" />
-                <TextView android:id="@+id/txtTotalIncome" android:text="0 VND" />
+                <TextView android:id="@+id/txtTotalIncome"
+                    android:text="0 VND" />
             </TableRow>
 
             <TableRow>
