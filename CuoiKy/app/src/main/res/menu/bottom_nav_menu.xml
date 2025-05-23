@@ -8,10 +8,6 @@
         android:icon="@drawable/ic_chart"
         android:title="Thống kê" />
     <item
-        android:id="@+id/nav_note"
-        android:icon="@drawable/ic_add"
-        android:title="Truy Vấn" />
-    <item
         android:id="@+id/nav_account"
         android:icon="@drawable/ic_settings"
         android:title="Tài khoản" />

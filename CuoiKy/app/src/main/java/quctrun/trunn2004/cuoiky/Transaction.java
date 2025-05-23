@@ -1,5 +1,7 @@
 package quctrun.trunn2004.cuoiky;
 
+import java.sql.Timestamp;
+
 public class Transaction {
     private String id;
     private String type;

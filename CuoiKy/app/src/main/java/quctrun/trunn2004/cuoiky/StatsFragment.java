@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -20,12 +21,14 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.formatter.ValueFormatter;
+import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
+
 
 import quctrun.trunn2004.cuoiky.R;
 
@@ -68,36 +71,42 @@ public class StatsFragment extends Fragment {
             }
 
             String userId = auth.getCurrentUser().getUid();
-            long start = calendarStart.getTimeInMillis();
-            long end = calendarEnd.getTimeInMillis() + 86399999;
+            long startMillis = calendarStart.getTimeInMillis();
+            long endMillis = calendarEnd.getTimeInMillis() + 86399999L; // Kết thúc hết ngày
+
+            Date startDate = new Date(startMillis);
+            Date endDate = new Date(endMillis);
+            Timestamp startTimestamp = new Timestamp(startDate);
+            Timestamp endTimestamp = new Timestamp(endDate);
 
             db.collection("transactions")
                     .whereEqualTo("userId", userId)
-                    .whereGreaterThanOrEqualTo("date", new Date(start))
-                    .whereLessThanOrEqualTo("date", new Date(end))
+                    .whereGreaterThanOrEqualTo("createdAt", startTimestamp)
+                    .whereLessThanOrEqualTo("createdAt", endTimestamp)
                     .get()
                     .addOnSuccessListener(queryDocumentSnapshots -> {
                         int totalIncome = 0;
                         int totalExpense = 0;
 
                         for (var doc : queryDocumentSnapshots) {
-                            long amount = doc.getLong("amount") != null ? doc.getLong("amount") : 0;
+                            Long amountLong = doc.getLong("amount");
                             String type = doc.getString("type");
 
-                            if ("Khoản Thu".equalsIgnoreCase(type)) {
+                            if (amountLong == null || type == null) continue;
+
+                            int amount = amountLong.intValue();
+
+                            if ("Khoản Thu".equalsIgnoreCase(type.trim())) {
                                 totalIncome += amount;
-                            } else if ("Khoản Chi".equalsIgnoreCase(type)) {
+                            } else if ("Khoản Chi".equalsIgnoreCase(type.trim())) {
                                 totalExpense += amount;
                             }
                         }
 
                         int remaining = totalIncome - totalExpense;
 
-                        txtTotalIncome.setText(totalIncome + " VND");
-                        txtTotalExpense.setText(totalExpense + " VND");
-                        txtRemaining.setText(remaining + " VND");
-
-                        showBarChart(totalIncome, totalExpense);
+                        updateStatsUI(totalIncome, totalExpense, remaining);
+                        updateBarChart(totalIncome, totalExpense);
                     })
                     .addOnFailureListener(e -> {
                         Toast.makeText(getContext(), "Lỗi truy vấn: " + e.getMessage(), Toast.LENGTH_SHORT).show();
@@ -107,6 +116,47 @@ public class StatsFragment extends Fragment {
 
         return view;
     }
+
+
+    private void updateStatsUI(int income, int expense, int remaining) {
+        txtTotalIncome.setText(income + " VND");
+        txtTotalExpense.setText(expense + " VND");
+        txtRemaining.setText(remaining + " VND");
+    }
+    private void updateBarChart(int income, int expense) {
+        ArrayList<BarEntry> entries = new ArrayList<>();
+        entries.add(new BarEntry(1f, income));
+        entries.add(new BarEntry(2f, expense));
+
+        BarDataSet dataSet = new BarDataSet(entries, "Thống kê");
+        dataSet.setColors(Color.parseColor("#4CAF50"), Color.parseColor("#FF9800")); // Màu: Thu - Chi
+        dataSet.setValueTextSize(14f);
+
+        BarData barData = new BarData(dataSet);
+        barData.setBarWidth(0.3f);
+
+        barChart.setData(barData);
+        barChart.setFitBars(true);
+        barChart.getDescription().setEnabled(false);
+        barChart.getAxisRight().setEnabled(false);
+
+        XAxis xAxis = barChart.getXAxis();
+        xAxis.setPosition(XAxis.XAxisPosition.BOTTOM);
+        xAxis.setGranularity(1f);
+        xAxis.setDrawGridLines(false);
+        xAxis.setValueFormatter(new ValueFormatter() {
+            @Override
+            public String getFormattedValue(float value) {
+                if (value == 1f) return "Thu nhập";
+                else if (value == 2f) return "Chi tiêu";
+                else return "";
+            }
+        });
+
+        barChart.animateY(1000);
+        barChart.invalidate();
+    }
+
     private void showDatePicker(boolean isStartDate) {
         Calendar calendar = Calendar.getInstance();
         DatePickerDialog datePickerDialog = new DatePickerDialog(
