@@ -30,7 +30,8 @@
                 android:id="@+id/btnStartDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ngày bắt đầu" />
+                android:text="Ngày bắt đầu"
+                android:backgroundTint="@color/blue_light"/>
 
             <TextView
                 android:text=" đến "
@@ -42,7 +43,8 @@
                 android:id="@+id/btnEndDate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Ngày kết thúc" />
+                android:text="Ngày kết thúc"
+                android:backgroundTint="@color/blue_light"/>
         </LinearLayout>
 
         <Button
@@ -51,7 +53,7 @@
             android:layout_marginTop="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#E96D6D" />
+            android:backgroundTint="@color/red_btn" />
 
         <!-- BẢNG DỮ LIỆU -->
         <TextView
@@ -70,23 +72,65 @@
             android:layout_marginTop="8dp">
 
             <TableRow>
-                <TextView android:text="Tổng thu nhập" />
-                <TextView android:id="@+id/txtTotalIncome"
-                    android:text="0 VND" />
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:text="Tổng thu nhập"
+                    android:background="@color/red_btn"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/txtTotalIncome"
+                    android:text="0 VND"
+                    android:textAlignment="center"
+                    android:background="@color/blue_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
             </TableRow>
 
             <TableRow>
-                <TextView android:text="Tổng chi tiêu" />
-                <TextView android:id="@+id/txtTotalExpense" android:text="0 VND" />
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:text="Tổng chi tiêu"
+                    android:background="@color/red_btn"
+                    android:textColor="@color/white"
+                    android:textAlignment="center"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/txtTotalExpense"
+                    android:text="0 VND"
+                    android:textAlignment="center"
+                    android:background="@color/blue_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
             </TableRow>
 
             <TableRow>
-                <TextView android:text="Còn lại" />
-                <TextView android:id="@+id/txtRemaining" android:text="0 VND" />
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:text="Còn lại"
+                    android:background="#f88070"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/txtRemaining"
+                    android:text="0 VND"
+                    android:textAlignment="center"
+                    android:background="@color/blue_light"
+                    android:textColor="@color/white"
+                    android:gravity="center"/>
             </TableRow>
         </TableLayout>
-
-        <!-- BIỂU ĐỒ -->
         <TextView
             android:text="BIỂU ĐỒ THU CHI"
             android:textStyle="bold"

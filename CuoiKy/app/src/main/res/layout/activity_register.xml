@@ -54,5 +54,6 @@
         android:id="@+id/btnRegister"
         android:layout_width="120dp"
         android:layout_height="60dp"
-        android:text="Đăng ký" />
+        android:text="Đăng ký"
+        android:backgroundTint="@color/teal_700"/>
 </LinearLayout>
