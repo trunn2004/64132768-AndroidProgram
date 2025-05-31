@@ -41,7 +41,8 @@
         android:text="Đăng nhập"
         android:padding="12dp"
         android:layout_marginBottom="16dp"
-        android:backgroundTint="@color/teal_700"/>
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/white"/>
 
     <TextView
         android:id="@+id/tvRegister"

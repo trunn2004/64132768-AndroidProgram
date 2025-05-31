@@ -55,5 +55,6 @@
         android:layout_width="120dp"
         android:layout_height="60dp"
         android:text="Đăng ký"
-        android:backgroundTint="@color/teal_700"/>
+        android:backgroundTint="@color/button_color"
+        android:textColor="@color/white"/>
 </LinearLayout>

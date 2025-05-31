@@ -1,5 +1,6 @@
 package quctrun.trunn2004.cuoiky;
 
+import android.app.AlertDialog;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -26,6 +28,7 @@ public class KhoanChiFragment extends Fragment {
     private List<KhoanChi> list;
     private KhoanChiAdapter adapter;
     private FirebaseFirestore db;
+    private String currentUserId;
 
     @Nullable
     @Override
@@ -34,13 +37,31 @@ public class KhoanChiFragment extends Fragment {
         recyclerView = view.findViewById(R.id.recyclerViewKhoanChi);
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         list = new ArrayList<>();
-        adapter = new KhoanChiAdapter(list);
-        recyclerView.setAdapter(adapter);
         db = FirebaseFirestore.getInstance();
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-        FirebaseAuth auth = FirebaseAuth.getInstance();
-        String currentUserId = auth.getCurrentUser().getUid();
+        currentUserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
 
+        adapter = new KhoanChiAdapter(list, new KhoanChiAdapter.OnItemClickListener() {
+            @Override
+            public void onEdit(KhoanChi khoanChi) {
+                showEditDialog(khoanChi);
+            }
+
+            @Override
+            public void onDelete(KhoanChi khoanChi) {
+                db.collection("transactions").document(khoanChi.getId()).delete()
+                        .addOnSuccessListener(unused -> {
+                            Toast.makeText(getContext(), "Đã xoá", Toast.LENGTH_SHORT).show();
+                            loadData();
+                        });
+            }
+        });
+
+        recyclerView.setAdapter(adapter);
+        loadData();
+        return view;
+    }
+
+    private void loadData() {
         db.collection("transactions")
                 .whereEqualTo("type", "Khoản Chi")
                 .whereEqualTo("userId", currentUserId)
@@ -49,6 +70,7 @@ public class KhoanChiFragment extends Fragment {
                     list.clear();
                     for (QueryDocumentSnapshot doc : queryDocumentSnapshots) {
                         KhoanChi chi = new KhoanChi(
+                                doc.getId(),
                                 doc.getLong("amount"),
                                 doc.getString("note"),
                                 doc.getString("date"),
@@ -58,8 +80,44 @@ public class KhoanChiFragment extends Fragment {
                     }
                     adapter.notifyDataSetChanged();
                 });
+    }
 
-        return view;
+    private void showEditDialog(KhoanChi khoanChi) {
+        AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
+        builder.setTitle("Sửa khoản chi");
+
+        View view = LayoutInflater.from(getContext()).inflate(R.layout.dialog_edit_khoan_chi, null);
+        EditText edtAmount = view.findViewById(R.id.edtSoTien);
+        EditText edtNote = view.findViewById(R.id.edtGhiChu);
+        EditText edtDate = view.findViewById(R.id.edtThoiGian);
+        EditText edtCategory = view.findViewById(R.id.edtCategory);
+
+        edtAmount.setText(String.valueOf(khoanChi.getSoTien()));
+        edtNote.setText(khoanChi.getGhiChu());
+        edtDate.setText(khoanChi.getThoiGian());
+        edtCategory.setText(khoanChi.getCategory());
+
+        builder.setView(view);
+        builder.setPositiveButton("Lưu", (dialog, which) -> {
+            long amount = Long.parseLong(edtAmount.getText().toString());
+            String note = edtNote.getText().toString();
+            String date = edtDate.getText().toString();
+            String category = edtCategory.getText().toString();
+
+            // Cập nhật
+            db.collection("transactions").document(khoanChi.getId())
+                    .update("amount", amount,
+                            "note", note,
+                            "date", date,
+                            "category", category)
+                    .addOnSuccessListener(unused -> {
+                        Toast.makeText(getContext(), "Cập nhật thành công", Toast.LENGTH_SHORT).show();
+                        loadData();
+                    });
+        });
+
+        builder.setNegativeButton("Huỷ", null);
+        builder.show();
     }
 }
 

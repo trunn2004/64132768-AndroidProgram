@@ -4,6 +4,14 @@
     <color name="white">#FFFFFFFF</color>
     <color name="teal_700">#00796B</color>
     <color name="purple_700">#7B1FA2</color>
-    <color name="red_btn">#ff9a8c</color>
     <color name="blue_light">#abd2d9</color>
+    <color name="background_color">#F1FDFB</color>
+    <color name="nav_header_color">#00BFA6</color>
+    <color name="button_color">#00C853</color>
+    <color name="text_primary_color">#212121</color>
+    <color name="text_secondary_color">#757575</color>
+    <color name="card_background_color">#FFFFFF</color>
+    <color name="outline_color">#B2DFDB</color>
+    <color name="accent_color">#1DE9B6</color>
+
 </resources>

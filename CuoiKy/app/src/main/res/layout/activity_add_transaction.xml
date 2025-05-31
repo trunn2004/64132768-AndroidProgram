@@ -42,22 +42,24 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Ngày: Chưa chọn"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="8dp"
+            android:textColor="@color/text_primary_color"/>
 
         <Button
             android:id="@+id/btn_pick_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Chọn ngày"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/accent_color" />
 
         <Button
             android:id="@+id/btn_save"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lưu khoản thu/chi"
-            android:backgroundTint="#4CAF50"
-            android:textColor="@android:color/white" />
+            android:backgroundTint="@color/button_color"
+            android:textColor="@color/white" />
 
     </LinearLayout>
 </ScrollView>
